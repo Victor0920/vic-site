@@ -1,0 +1,39 @@
+:root {
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 12px;
+  --spacing-lg: 16px;
+  --spacing-xl: 24px;
+  --spacing-2xl: 36px;
+  --spacing-3xl: 64px;
+
+  --width-main: 1100px;
+
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-pill: 999px;
+
+  /* Brand palette: dark, developer-friendly */
+  --color-primary: hsl(212, 90%, 62%);
+  --color-primary-dark: hsl(212, 80%, 50%);
+  --color-primary-light: hsl(212, 60%, 18%);
+  --color-accent: hsl(150, 70%, 55%);
+  --color-whatsapp: #25d366;
+  --color-whatsapp-dark: #1ebe5b;
+
+  --color-body: hsl(222, 30%, 9%);
+  --color-canvas: hsl(222, 25%, 13%);
+  --color-alt: hsl(222, 25%, 12%);
+  --color-ink: hsl(215, 25%, 92%);
+  --color-ink-muted: hsl(215, 15%, 65%);
+  --color-line: hsl(220, 20%, 22%);
+  --color-placeholder: hsl(222, 20%, 16%);
+  --color-placeholder-border: hsl(220, 15%, 35%);
+
+  --shadow-sm: 0 1px 3px hsla(222, 40%, 3%, 0.4);
+  --shadow-md: 0 6px 20px hsla(222, 40%, 3%, 0.5);
+
+  --font-sans: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+}
