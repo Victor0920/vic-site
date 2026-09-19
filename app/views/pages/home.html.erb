@@ -1,153 +1,89 @@
 <%# ---------- HERO ---------- %>
 <section class="hero">
   <div class="hero__text">
-    <p class="eyebrow"><%= site.tagline %> · <%= site.location %></p>
-    <h1>Hi, I'm Víctor. I build web applications from start to finish.</h1>
-    <p class="lead">
-      Full stack developer working with Next.js, SvelteKit and Ruby on Rails.
-      I take care of the whole thing: frontend, backend, database and hosting.
-    </p>
+    <p class="eyebrow"><%= t("site.tagline") %> · <%= t("site.location") %></p>
+    <h1><%= t(".hero.title") %></h1>
+    <p class="lead"><%= t(".hero.lead") %></p>
     <div class="hero__actions">
-      <%= link_to "Chat on WhatsApp", whatsapp_url, class: "btn btn--primary", target: "_blank", rel: "noopener" %>
-      <a href="#services" class="btn btn--ghost">What I can do for you</a>
+      <%= link_to t(".hero.cta_whatsapp"),
+                  whatsapp_url,
+                  class: "btn btn--primary",
+                  target: "_blank",
+                  rel: "noopener" %>
+      <a href="#services" class="btn btn--ghost"><%= t(".hero.cta_services") %></a>
     </div>
     <ul class="stack">
-      <li>Next.js</li>
-      <li>SvelteKit</li>
-      <li>Ruby on Rails</li>
-      <li>Vue</li>
-      <li>Angular</li>
-      <li>Node</li>
-      <li>Pocketbase</li>
+      <% t(".hero.stack").each do |tech| %>
+        <li><%= tech %></li>
+      <% end %>
     </ul>
   </div>
-  <%= image_placeholder("Photo: portrait of Víctor", css_class: "img-placeholder--portrait") %>
+  <%= image_placeholder(t(".hero.image"), css_class: "img-placeholder--portrait") %>
 </section>
 
 <%# ---------- ABOUT ---------- %>
 <section id="about" class="section split">
   <div>
-    <h2>About me</h2>
-    <p>
-      I love creating, drawing and maths, which is why I studied Industrial Design Engineering.
-      At 20 I discovered programming and fell deeply in love with the possibilities.
-      I chose a Master's in Robotics to find out whether that was what I was really looking for. It was.
-    </p>
-    <p>
-      I spent the lockdown learning JavaScript, Angular and Node while working as a graphic designer,
-      and in September 2020 I started a new life as a frontend developer. Today I work as a full stack
-      developer and, in my free time, I build projects for clients.
-    </p>
-    <p>
-      For me there is no better way to keep learning than to build new projects with alternative
-      (non-mainstream) technologies. I have proven to myself that, most of the time, they are better
-      than the "standard" ones.
-    </p>
-    <p>I wake up every day motivated, I enjoy my work and I learn something new daily. Nice to meet you! :)</p>
+    <h2><%= t(".about.title") %></h2>
+    <% t(".about.paragraphs").each do |paragraph| %>
+      <p><%= paragraph %></p>
+    <% end %>
   </div>
-  <%= image_placeholder("Image: workspace or project", css_class: "img-placeholder--tall") %>
+  <%= image_placeholder(t(".about.image"), css_class: "img-placeholder--tall") %>
 </section>
 
 <%# ---------- SERVICES ---------- %>
 <section id="services" class="section section--alt">
-  <h2>What I can do for you</h2>
-  <p class="section__intro">
-    I'm open to well-scoped projects that one person can deliver: from complex web applications
-    with multiple integrations to simple websites.
-  </p>
+  <h2><%= t(".services.title") %></h2>
+  <p class="section__intro"><%= t(".services.intro") %></p>
 
   <div class="cards">
-    <article class="card">
-      <%= image_placeholder("Icon: website") %>
-      <h3>Websites</h3>
-      <p>Landing pages and company sites that are fast, polished and easy to maintain.</p>
-    </article>
-
-    <article class="card">
-      <%= image_placeholder("Icon: web application") %>
-      <h3>Custom web applications</h3>
-      <p>Dashboards, internal tools and complete products with users, payments and integrations.</p>
-    </article>
-
-    <article class="card">
-      <%= image_placeholder("Icon: frontend") %>
-      <h3>Frontend</h3>
-      <p>Interfaces with Next.js, SvelteKit, Vue or Angular. And yes, I love CSS.</p>
-    </article>
-
-    <article class="card">
-      <%= image_placeholder("Icon: backend") %>
-      <h3>Backend and database</h3>
-      <p>APIs and business logic with Ruby on Rails or Node, and whichever database fits best.</p>
-    </article>
-
-    <article class="card">
-      <%= image_placeholder("Icon: hosting") %>
-      <h3>Hosting and deployment</h3>
-      <p>I put your project into production and keep it running.</p>
-    </article>
-
-    <article class="card">
-      <%= image_placeholder("Icon: design") %>
-      <h3>Design and UX</h3>
-      <p>Background as a graphic designer: branding, layout and user experience.</p>
-    </article>
+    <% t(".services.cards").each do |card| %>
+      <article class="card">
+        <%= image_placeholder(card[:icon]) %>
+        <h3><%= card[:title] %></h3>
+        <p><%= card[:text] %></p>
+      </article>
+    <% end %>
   </div>
 </section>
 
 <%# ---------- EXPERIENCE ---------- %>
 <section id="experience" class="section">
-  <h2>Experience</h2>
+  <h2><%= t(".experience.title") %></h2>
   <ol class="timeline">
-    <li class="timeline__item">
-      <span class="timeline__date">2023 – Present</span>
-      <h3>Full Stack Developer · VictorVidal.dev</h3>
-      <p class="timeline__meta">Freelance · Remote</p>
-      <p>Complete full stack applications for clients, from start to finish: frontend, backend, database and hosting.</p>
-    </li>
-    <li class="timeline__item">
-      <span class="timeline__date">Present</span>
-      <h3>Full Stack Developer · Snap Finance UK</h3>
-      <p class="timeline__meta">React, Next.js</p>
-      <p>Product development at a fintech, alongside an exceptional team I learn from every day.</p>
-    </li>
-    <li class="timeline__item">
-      <span class="timeline__date">Sep 2020 – Dec 2022</span>
-      <h3>Frontend Developer · 1MillionBot</h3>
-      <p class="timeline__meta">Vue, Angular · Remote</p>
-      <p>Built from scratch and maintained the web chat window in Vue, and the analytics dashboard in Angular. Project management with GitHub.</p>
-    </li>
-    <li class="timeline__item">
-      <span class="timeline__date">Jun 2019 – Sep 2020</span>
-      <h3>Graphic Design Specialist · 1MillionBot</h3>
-      <p class="timeline__meta">Part-time</p>
-      <p>New brand identity, website redesign (WordPress), social media, and unique avatars for chatbots.</p>
-    </li>
+    <% t(".experience.jobs").each do |job| %>
+      <li class="timeline__item">
+        <span class="timeline__date"><%= job[:date] %></span>
+        <h3><%= job[:title] %></h3>
+        <p class="timeline__meta"><%= job[:meta] %></p>
+        <p><%= job[:text] %></p>
+      </li>
+    <% end %>
   </ol>
 
   <div class="education">
-    <h3>Education</h3>
+    <h3><%= t(".experience.education.title") %></h3>
     <ul>
-      <li><strong>Master's in Robotics and Artificial Vision</strong> — Universitat Politècnica de València (UPV)</li>
-      <li><strong>Bachelor's in Industrial Design Engineering and Product Development</strong></li>
+      <% t(".experience.education.items").each do |item| %>
+        <li><strong><%= item[:degree] %></strong> — <%= item[:school] %></li>
+      <% end %>
     </ul>
-    <p class="timeline__meta">Languages: Spanish (native) · English (full professional proficiency)</p>
+    <p class="timeline__meta"><%= t(".experience.education.languages") %></p>
   </div>
 </section>
 
 <%# ---------- CONTACT ---------- %>
 <section id="contact" class="section contact">
-  <h2>Have a project in mind?</h2>
-  <p class="lead">
-    Tell me about it on WhatsApp or by email and I'll get back to you as soon as possible.
-  </p>
+  <h2><%= t(".contact.title") %></h2>
+  <p class="lead"><%= t(".contact.lead") %></p>
   <div class="contact__actions">
     <%= link_to whatsapp_url, class: "btn btn--primary btn--large", target: "_blank", rel: "noopener" do %>
-      WhatsApp · <%= whatsapp_number_display %>
+      <%= t(".contact.whatsapp") %> · <%= whatsapp_number_display %>
     <% end %>
     <%= mail_to contact_email, contact_email, class: "btn btn--ghost btn--large" %>
   </div>
   <p class="contact__note">
-    Also on <%= link_to "LinkedIn", site.linkedin_url, target: "_blank", rel: "noopener" %>.
+    <%= t(".contact.note_html", linkedin: link_to("LinkedIn", site.linkedin_url, target: "_blank", rel: "noopener")) %>
   </p>
 </section>

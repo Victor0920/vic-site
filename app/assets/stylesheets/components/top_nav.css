@@ -36,7 +36,7 @@
 }
 
 @media (max-width: 640px) {
-  .top-nav__links a:not(.btn) {
+  .top-nav__links > a:not(.btn) {
     display: none;
   }
 }

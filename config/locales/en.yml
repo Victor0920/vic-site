@@ -1,31 +1,107 @@
-# Files in the config/locales directory are used for internationalization and
-# are automatically loaded by Rails. If you want to use locales other than
-# English, add the necessary files in this directory.
-#
-# To use the locales, use `I18n.t`:
-#
-#     I18n.t "hello"
-#
-# In views, this is aliased to just `t`:
-#
-#     <%= t("hello") %>
-#
-# To use a different locale, set it with `I18n.locale`:
-#
-#     I18n.locale = :es
-#
-# This would use the information in config/locales/es.yml.
-#
-# To learn more about the API, please read the Rails Internationalization guide
-# at https://guides.rubyonrails.org/i18n.html.
-#
-# Be aware that YAML interprets the following case-insensitive strings as
-# booleans: `true`, `false`, `on`, `off`, `yes`, `no`. Therefore, these strings
-# must be quoted to be interpreted as strings. For example:
-#
-#     en:
-#       "yes": yup
-#       enabled: "ON"
-
 en:
-  hello: "Hello world"
+  site:
+    tagline: "Freelance full stack developer"
+    location: "Aspe, Alicante (Spain)"
+    meta_description: "%{name}, %{tagline} in %{location}. Custom web applications and websites, from start to finish: frontend, backend, database and hosting."
+    whatsapp_message: "Hi Víctor, I'd like to talk about a project."
+
+  layout:
+    nav:
+      about: "About"
+      services: "Services"
+      experience: "Experience"
+      contact: "Contact"
+    lang:
+      label: "Change language"
+      flags:
+        en: "🇬🇧"
+        es: "🇪🇸"
+      names:
+        en: "English"
+        es: "Español"
+    whatsapp_fab: "Message me on WhatsApp"
+
+  pages:
+    home:
+      hero:
+        title: "Hi, I'm Víctor. I build web applications from start to finish."
+        lead: "Full stack developer working with Ruby on Rails or NextJS. I take care of the whole thing: frontend, backend, database and hosting."
+        cta_whatsapp: "Chat on WhatsApp"
+        cta_services: "What I can do for you"
+        stack:
+          - "Ruby on Rails"
+          - "Next.js"
+          - "SvelteKit"
+          - "Vue"
+          - "Angular"
+          - "Node"
+          - "PostgreSQL"
+          - "MongoDB"
+          - "Pocketbase"
+        image: "Photo: portrait of Víctor"
+
+      about:
+        title: "About me"
+        paragraphs:
+          - "I love creating, drawing and maths, which is why I studied Industrial Design Engineering. At 20 I discovered programming and fell deeply in love with the possibilities. I chose a Master's in Robotics to find out whether that was what I was really looking for. It was."
+          - "I spent the lockdown learning JavaScript, Angular and Node while working as a graphic designer, and in September 2020 I started a new life as a frontend developer. Today I work as a full stack developer and, in my free time, I build projects for clients."
+          - "For me there is no better way to keep learning than to build new projects with alternative (non-mainstream) technologies. I have proven to myself that, most of the time, they are better than the \"standard\" ones."
+          - "I wake up every day motivated, I enjoy my work and I learn something new daily. Nice to meet you! :)"
+        image: "Image: workspace or project"
+
+      services:
+        title: "What I can do for you"
+        intro: "I'm open to well-scoped projects that one person can deliver: from complex web applications with multiple integrations to simple websites."
+        cards:
+          - icon: "Icon: website"
+            title: "Websites"
+            text: "Landing pages and company sites that are fast, polished and easy to maintain."
+          - icon: "Icon: web application"
+            title: "Custom web applications"
+            text: "Dashboards, internal tools and complete products with users, payments and integrations."
+          - icon: "Icon: frontend"
+            title: "Frontend"
+            text: "Interfaces with Next.js, SvelteKit, Vue or Angular. And yes, I love CSS."
+          - icon: "Icon: backend"
+            title: "Backend and database"
+            text: "APIs and business logic with Ruby on Rails or Node, and whichever database fits best."
+          - icon: "Icon: hosting"
+            title: "Hosting and deployment"
+            text: "I put your project into production and keep it running."
+          - icon: "Icon: design"
+            title: "Design and UX"
+            text: "Background as a graphic designer: branding, layout and user experience."
+
+      experience:
+        title: "Experience"
+        jobs:
+          - date: "2023 – Present"
+            title: "Full Stack Developer · VictorVidal.dev"
+            meta: "Freelance · Remote"
+            text: "Complete full stack applications for clients, from start to finish: frontend, backend, database and hosting."
+          - date: "2023 – Present"
+            title: "Full Stack Developer · Snap Finance UK"
+            meta: "React, Next.js, Node, Java, Prismic CMS · Remote"
+            text: "Product development at a fintech."
+          - date: "Sep 2020 – Dec 2022"
+            title: "Frontend Developer · 1MillionBot"
+            meta: "Vue, Angular · Remote"
+            text: "Built from scratch and maintained the web chat window in Vue. Enhanced the analytics dashboard in Angular."
+          - date: "Jun 2019 – Sep 2020"
+            title: "Graphic Design Specialist · 1MillionBot"
+            meta: "Wordpress, Adobe Illustrator"
+            text: "New brand identity, website redesign, social media, and unique avatars for chatbots."
+        education:
+          title: "Education"
+          items:
+            - degree: "Master's in Robotics and Artificial Vision"
+              school: "Universitat Politècnica de València (UPV)"
+            - degree: "Bachelor's in Industrial Design Engineering and Product Development"
+              school: "Universitat Politècnica de València (UPV)"
+          languages: "Languages: Spanish (native) · English (full professional proficiency)"
+
+      contact:
+        title: "Have a project in mind?"
+        lead: "Tell me about it on WhatsApp or by email and I'll get back to you as soon as possible."
+        whatsapp: "WhatsApp"
+        note_html: "Also on %{linkedin}."

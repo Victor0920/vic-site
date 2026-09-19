@@ -1,0 +1,107 @@
+es:
+  site:
+    tagline: "Desarrollador full stack freelance"
+    location: "Aspe, Alicante"
+    meta_description: "%{name}, %{tagline} en %{location}. Aplicaciones web y páginas a medida, de principio a fin: frontend, backend, base de datos y hosting."
+    whatsapp_message: "Hola Víctor, me gustaría hablar sobre un proyecto."
+
+  layout:
+    nav:
+      about: "Sobre mí"
+      services: "Servicios"
+      experience: "Experiencia"
+      contact: "Contacto"
+    lang:
+      label: "Cambiar idioma"
+      flags:
+        en: "🇬🇧"
+        es: "🇪🇸"
+      names:
+        en: "English"
+        es: "Español"
+    whatsapp_fab: "Escríbeme por WhatsApp"
+
+  pages:
+    home:
+      hero:
+        title: "Hola, soy Víctor. Aplicaciones web de principio a fin."
+        lead: "Desarrollador full stack con Ruby on Rails o NextJS. Me encargo de todo: frontend, backend, base de datos y hosting."
+        cta_whatsapp: "Hablemos por WhatsApp"
+        cta_services: "Qué puedo hacer por ti"
+        stack:
+          - "Ruby on Rails"
+          - "Next.js"
+          - "SvelteKit"
+          - "Vue"
+          - "Angular"
+          - "Node"
+          - "PostgreSQL"
+          - "MongoDB"
+          - "Pocketbase"
+        image: "Foto: retrato de Víctor"
+
+      about:
+        title: "Sobre mí"
+        paragraphs:
+          - "Me encanta crear, dibujar y las matemáticas, por eso estudié Ingeniería en Diseño Industrial. A los 20 años descubrí la programación y quedé profundamente enamorado de las posibilidades. Elegí un máster de Robótica para ver si era eso lo que de verdad estaba buscando. Y tanto que lo fue."
+          - "Aproveché el confinamiento para aprender JavaScript, Angular y Node mientras trabajaba de diseñador gráfico, y en septiembre de 2020 comencé una nueva vida como desarrollador frontend. Hoy trabajo como full stack y, en mi tiempo libre, desarrollo proyectos para clientes."
+          - "Para mí no hay mejor manera de seguir aprendiendo que realizar nuevos proyectos con tecnologías alternativas (no comunes). He comprobado por mí mismo que, en la mayoría de los casos, son mejores que las «estándar»."
+          - "Me levanto cada día súper motivado, disfruto trabajando y aprendo cosas nuevas a diario. ¡Encantado! :)"
+        image: "Imagen: espacio de trabajo o proyecto"
+
+      services:
+        title: "Qué puedo hacer por ti"
+        intro: "Estoy abierto a proyectos acotados que pueda desarrollar una sola persona: desde aplicaciones web complejas con múltiples integraciones hasta sencillas páginas web."
+        cards:
+          - icon: "Icono: página web"
+            title: "Páginas web"
+            text: "Landing pages y webs corporativas rápidas, cuidadas y fáciles de mantener."
+          - icon: "Icono: aplicación web"
+            title: "Aplicaciones web a medida"
+            text: "Paneles, herramientas internas y productos completos con usuarios, pagos e integraciones."
+          - icon: "Icono: frontend"
+            title: "Frontend"
+            text: "Interfaces con Next.js, SvelteKit, Vue o Angular. Y sí, me encanta el CSS."
+          - icon: "Icono: backend"
+            title: "Backend y base de datos"
+            text: "APIs y lógica de negocio con Ruby on Rails o Node, y la base de datos que mejor encaje."
+          - icon: "Icono: hosting"
+            title: "Hosting y despliegue"
+            text: "Pongo tu proyecto en producción y me ocupo de que siga funcionando."
+          - icon: "Icono: diseño"
+            title: "Diseño y UX"
+            text: "Experiencia previa como diseñador gráfico: branding, maquetación y experiencia de usuario."
+
+      experience:
+        title: "Experiencia"
+        jobs:
+          - date: "2023 – Actualidad"
+            title: "Full Stack Developer · VictorVidal.dev"
+            meta: "Freelance · Remoto"
+            text: "Aplicaciones full stack completas para clientes, de principio a fin: frontend, backend, base de datos y hosting."
+          - date: "2023 – Actualidad"
+            title: "Full Stack Developer · Snap Finance UK"
+            meta: "React, Next.js, Node, Java, Prismic CMS · Remoto"
+            text: "Desarrollo de producto en una fintech."
+          - date: "Sep 2020 – Dic 2022"
+            title: "Frontend Developer · 1MillionBot"
+            meta: "Vue, Angular · Remoto"
+            text: "Creación desde cero y mantenimiento de la ventana de chat web con Vue. Mejoras en el panel de analítica con Angular."
+          - date: "Jun 2019 – Sep 2020"
+            title: "Graphic Design Specialist · 1MillionBot"
+            meta: "Wordpress, Adobe Illustrator"
+            text: "Nueva identidad de marca, rediseño de la web, redes sociales y avatares únicos para chatbots."
+        education:
+          title: "Formación"
+          items:
+            - degree: "Máster en Robótica y Visión Artificial"
+              school: "Universitat Politècnica de València (UPV)"
+            - degree: "Grado en Ingeniería en Diseño Industrial y Desarrollo de Productos"
+              school: "Universitat Politècnica de València (UPV)"
+          languages: "Idiomas: español (nativo) · inglés (profesional completo)"
+
+      contact:
+        title: "¿Tienes un proyecto en mente?"
+        lead: "Cuéntamelo por WhatsApp o por correo y te respondo lo antes posible."
+        whatsapp: "WhatsApp"
+        note_html: "También en %{linkedin}."

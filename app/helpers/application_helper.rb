@@ -14,7 +14,7 @@ module ApplicationHelper
     "+#{n[0, 2]} #{n[2, 3]} #{n[5, 3]} #{n[8, 3]}"
   end
 
-  def whatsapp_url(text = "Hi Víctor, I'd like to talk about a project.")
+  def whatsapp_url(text = t("site.whatsapp_message"))
     "https://wa.me/#{whatsapp_number}?text=#{ERB::Util.url_encode(text)}"
   end
 
