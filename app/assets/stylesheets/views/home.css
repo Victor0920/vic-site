@@ -1,9 +1,5 @@
 /* ---------- Hero ---------- */
 .hero {
-  display: grid;
-  grid-template-columns: 1.3fr 1fr;
-  align-items: center;
-  gap: var(--spacing-2xl);
   padding: var(--spacing-3xl) 0;
 }
 
@@ -12,6 +8,15 @@
   flex-wrap: wrap;
   gap: var(--spacing-md);
   margin-top: var(--spacing-xl);
+  justify-content: center;
+}
+
+.hero .lead {
+  text-align: center;
+}
+
+.hero__title {
+  text-align: center;
 }
 
 .stack {
@@ -21,6 +26,7 @@
   display: flex;
   flex-wrap: wrap;
   gap: var(--spacing-sm);
+  justify-content: center;
 }
 
 .stack li {
@@ -46,8 +52,13 @@
 }
 
 .section__intro {
-  max-width: 640px;
   color: var(--color-ink-muted);
+}
+
+.section img {
+  max-width: 100%;
+  border: 2px solid var(--color-placeholder-border);
+  border-radius: var(--radius-md);
 }
 
 /* ---------- Service cards ---------- */

@@ -1,14 +1,14 @@
 <%# Language dropdown. Pure HTML (<details>), no JavaScript needed. %>
-<details class="lang">
-  <summary class="lang__current" aria-label="<%= t("layout.lang.label") %>">
+<details class="dropdown">
+  <summary class="dropdown__toggle" aria-label="<%= t("layout.lang.label") %>">
     <%= t("layout.lang.flags.#{I18n.locale}") %>
-    <span class="lang__caret" aria-hidden="true">▾</span>
+    <span class="dropdown__caret" aria-hidden="true">▾</span>
   </summary>
-  <ul class="lang__menu">
+  <ul class="dropdown__menu">
     <% I18n.available_locales.each do |locale| %>
       <li>
         <%= link_to url_for(locale: locale),
-                    class: "lang__option #{"lang__option--active" if locale == I18n.locale}",
+                    class: "dropdown__option #{"dropdown__option--active" if locale == I18n.locale}",
                     hreflang: locale,
                     lang: locale do %>
           <%= t("layout.lang.flags.#{locale}") %> <%= t("layout.lang.names.#{locale}") %>

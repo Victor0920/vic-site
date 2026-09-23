@@ -19,13 +19,21 @@ es:
       names:
         en: "English"
         es: "Español"
+    theme:
+      label: "Cambiar tema"
+      icons:
+        light: "☀️"
+        dark: "🌑"
+      names:
+        light: "Claro"
+        dark: "Oscuro"
     whatsapp_fab: "Escríbeme por WhatsApp"
 
   pages:
     home:
       hero:
         title: "Hola, soy Víctor. Aplicaciones web de principio a fin."
-        lead: "Desarrollador full stack con Ruby on Rails o NextJS. Me encargo de todo: frontend, backend, base de datos y hosting."
+        lead: "Me encargo de todo: frontend, backend, base de datos y hosting."
         cta_whatsapp: "Hablemos por WhatsApp"
         cta_services: "Qué puedo hacer por ti"
         stack:
@@ -37,23 +45,21 @@ es:
           - "Node"
           - "PostgreSQL"
           - "MongoDB"
-          - "Pocketbase"
         image: "Foto: retrato de Víctor"
 
       about:
         title: "Sobre mí"
         paragraphs:
-          - "Me encanta crear, dibujar y las matemáticas, por eso estudié Ingeniería en Diseño Industrial. A los 20 años descubrí la programación y quedé profundamente enamorado de las posibilidades. Elegí un máster de Robótica para ver si era eso lo que de verdad estaba buscando. Y tanto que lo fue."
-          - "Aproveché el confinamiento para aprender JavaScript, Angular y Node mientras trabajaba de diseñador gráfico, y en septiembre de 2020 comencé una nueva vida como desarrollador frontend. Hoy trabajo como full stack y, en mi tiempo libre, desarrollo proyectos para clientes."
-          - "Para mí no hay mejor manera de seguir aprendiendo que realizar nuevos proyectos con tecnologías alternativas (no comunes). He comprobado por mí mismo que, en la mayoría de los casos, son mejores que las «estándar»."
+          - "Estudié Ingeniería en Diseño Industrial. Durante la carrera descubrí la programación y quedé profundamente enamorado. Por lo que hice un máster de Robótica y Visión Artificial."
+          - "Hoy trabajo como programador full stack mientras desarrollo proyectos alternativos para clientes. Me encanta probar tecnologías no comunes. Para mí, en la mayoría de los casos, son mejores que las «estándar»."
           - "Me levanto cada día súper motivado, disfruto trabajando y aprendo cosas nuevas a diario. ¡Encantado! :)"
-        image: "Imagen: espacio de trabajo o proyecto"
+        image: "Yo trabajando en un sillón"
 
       services:
         title: "Qué puedo hacer por ti"
         intro: "Estoy abierto a proyectos acotados que pueda desarrollar una sola persona: desde aplicaciones web complejas con múltiples integraciones hasta sencillas páginas web."
         cards:
-          - icon: "Icono: página web"
+          - icon: "website"
             title: "Páginas web"
             text: "Landing pages y webs corporativas rápidas, cuidadas y fáciles de mantener."
           - icon: "Icono: aplicación web"
@@ -75,11 +81,11 @@ es:
       experience:
         title: "Experiencia"
         jobs:
-          - date: "2023 – Actualidad"
+          - date: "Jun 2023 – Actualidad"
             title: "Full Stack Developer · VictorVidal.dev"
             meta: "Freelance · Remoto"
             text: "Aplicaciones full stack completas para clientes, de principio a fin: frontend, backend, base de datos y hosting."
-          - date: "2023 – Actualidad"
+          - date: "Ene 2023 – Actualidad"
             title: "Full Stack Developer · Snap Finance UK"
             meta: "React, Next.js, Node, Java, Prismic CMS · Remoto"
             text: "Desarrollo de producto en una fintech."

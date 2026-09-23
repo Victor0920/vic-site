@@ -1,24 +1,23 @@
 <%# ---------- HERO ---------- %>
 <section class="hero">
-  <div class="hero__text">
-    <p class="eyebrow"><%= t("site.tagline") %> · <%= t("site.location") %></p>
-    <h1><%= t(".hero.title") %></h1>
-    <p class="lead"><%= t(".hero.lead") %></p>
-    <div class="hero__actions">
-      <%= link_to t(".hero.cta_whatsapp"),
-                  whatsapp_url,
-                  class: "btn btn--primary",
-                  target: "_blank",
-                  rel: "noopener" %>
-      <a href="#services" class="btn btn--ghost"><%= t(".hero.cta_services") %></a>
-    </div>
-    <ul class="stack">
-      <% t(".hero.stack").each do |tech| %>
-        <li><%= tech %></li>
-      <% end %>
-    </ul>
+  <p class="eyebrow"><%= t("site.tagline") %>
+    ·
+    <%= t("site.location") %></p>
+  <h1 class="hero__title"><%= t(".hero.title") %></h1>
+  <p class="lead"><%= t(".hero.lead") %></p>
+  <div class="hero__actions">
+    <%= link_to t(".hero.cta_whatsapp"),
+    whatsapp_url,
+    class: "btn btn--primary",
+    target: "_blank",
+    rel: "noopener" %>
+    <a href="#services" class="btn btn--ghost"><%= t(".hero.cta_services") %></a>
   </div>
-  <%= image_placeholder(t(".hero.image"), css_class: "img-placeholder--portrait") %>
+  <ul class="stack">
+    <% t(".hero.stack").each do |tech| %>
+      <li><%= tech %></li>
+    <% end %>
+  </ul>
 </section>
 
 <%# ---------- ABOUT ---------- %>
@@ -29,7 +28,11 @@
       <p><%= paragraph %></p>
     <% end %>
   </div>
-  <%= image_placeholder(t(".about.image"), css_class: "img-placeholder--tall") %>
+  <%= image_tag(
+    "victor.png",
+    alt: t(".about.image"),
+    css_class: "img-placeholder--tall",
+  ) %>
 </section>
 
 <%# ---------- SERVICES ---------- %>
@@ -40,7 +43,7 @@
   <div class="cards">
     <% t(".services.cards").each do |card| %>
       <article class="card">
-        <%= image_placeholder(card[:icon]) %>
+        <%# <%= image_placeholder(card[:icon]) %>
         <h3><%= card[:title] %></h3>
         <p><%= card[:text] %></p>
       </article>
@@ -66,7 +69,9 @@
     <h3><%= t(".experience.education.title") %></h3>
     <ul>
       <% t(".experience.education.items").each do |item| %>
-        <li><strong><%= item[:degree] %></strong> — <%= item[:school] %></li>
+        <li><strong><%= item[:degree] %></strong>
+          —
+          <%= item[:school] %></li>
       <% end %>
     </ul>
     <p class="timeline__meta"><%= t(".experience.education.languages") %></p>
@@ -79,11 +84,17 @@
   <p class="lead"><%= t(".contact.lead") %></p>
   <div class="contact__actions">
     <%= link_to whatsapp_url, class: "btn btn--primary btn--large", target: "_blank", rel: "noopener" do %>
-      <%= t(".contact.whatsapp") %> · <%= whatsapp_number_display %>
+      <%= t(".contact.whatsapp") %>
+      ·
+      <%= whatsapp_number_display %>
     <% end %>
     <%= mail_to contact_email, contact_email, class: "btn btn--ghost btn--large" %>
   </div>
   <p class="contact__note">
-    <%= t(".contact.note_html", linkedin: link_to("LinkedIn", site.linkedin_url, target: "_blank", rel: "noopener")) %>
+    <%= t(
+      ".contact.note_html",
+      linkedin:
+        link_to("LinkedIn", site.linkedin_url, target: "_blank", rel: "noopener"),
+    ) %>
   </p>
 </section>

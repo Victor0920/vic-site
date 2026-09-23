@@ -22,13 +22,14 @@
 .top-nav__links {
   display: flex;
   align-items: center;
-  gap: var(--spacing-xl);
+  gap: var(--spacing-md);
 }
 
 .top-nav__links a:not(.btn) {
   text-decoration: none;
   color: var(--color-ink);
   font-weight: 500;
+  padding: 0 var(--spacing-sm);
 }
 
 .top-nav__links a:not(.btn):hover {

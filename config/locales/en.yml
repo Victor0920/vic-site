@@ -19,13 +19,21 @@ en:
       names:
         en: "English"
         es: "Español"
+    theme:
+      label: "Change theme"
+      icons:
+        light: "☀️"
+        dark: "🌑"
+      names:
+        light: "Light"
+        dark: "Dark"
     whatsapp_fab: "Message me on WhatsApp"
 
   pages:
     home:
       hero:
-        title: "Hi, I'm Víctor. I build web applications from start to finish."
-        lead: "Full stack developer working with Ruby on Rails or NextJS. I take care of the whole thing: frontend, backend, database and hosting."
+        title: "Hi, I'm Víctor. I build your web applications from start to finish."
+        lead: "I take care of the whole thing: frontend, backend, database and hosting."
         cta_whatsapp: "Chat on WhatsApp"
         cta_services: "What I can do for you"
         stack:
@@ -37,16 +45,14 @@ en:
           - "Node"
           - "PostgreSQL"
           - "MongoDB"
-          - "Pocketbase"
         image: "Photo: portrait of Víctor"
 
       about:
         title: "About me"
         paragraphs:
-          - "I love creating, drawing and maths, which is why I studied Industrial Design Engineering. At 20 I discovered programming and fell deeply in love with the possibilities. I chose a Master's in Robotics to find out whether that was what I was really looking for. It was."
-          - "I spent the lockdown learning JavaScript, Angular and Node while working as a graphic designer, and in September 2020 I started a new life as a frontend developer. Today I work as a full stack developer and, in my free time, I build projects for clients."
-          - "For me there is no better way to keep learning than to build new projects with alternative (non-mainstream) technologies. I have proven to myself that, most of the time, they are better than the \"standard\" ones."
-          - "I wake up every day motivated, I enjoy my work and I learn something new daily. Nice to meet you! :)"
+          - "I studied Industrial Design Engineering. During my studies, I discovered programming and fell deeply in love with it, so I went on to complete a master's degree in Robotics and Computer Vision."
+          - "Today, I work as a full-stack developer while also building side projects for clients. I love experimenting with unconventional technologies; in most cases, I find them superior to the 'standard' ones."
+          - "I wake up every day highly motivated; I enjoy my work and learn something new every day. Nice to meet you! :)"
         image: "Image: workspace or project"
 
       services:
@@ -75,11 +81,11 @@ en:
       experience:
         title: "Experience"
         jobs:
-          - date: "2023 – Present"
+          - date: "Jun 2023 – Present"
             title: "Full Stack Developer · VictorVidal.dev"
             meta: "Freelance · Remote"
             text: "Complete full stack applications for clients, from start to finish: frontend, backend, database and hosting."
-          - date: "2023 – Present"
+          - date: "Jan 2023 – Present"
             title: "Full Stack Developer · Snap Finance UK"
             meta: "React, Next.js, Node, Java, Prismic CMS · Remote"
             text: "Product development at a fintech."

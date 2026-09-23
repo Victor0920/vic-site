@@ -21,7 +21,9 @@ main {
   padding: 0 var(--spacing-xl);
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   line-height: 1.2;
   margin: 0 0 var(--spacing-md);
 }
@@ -54,6 +56,7 @@ a {
   font-size: 0.8rem;
   font-weight: 600;
   color: var(--color-accent);
+  text-align: center;
 }
 
 .lead {

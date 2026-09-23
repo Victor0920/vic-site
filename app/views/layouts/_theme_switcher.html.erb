@@ -1,0 +1,18 @@
+<%# Dark/light dropdown. The chosen theme is stored in localStorage and applied
+    as <html data-theme="..."> by the small script in the layout <head>. %>
+<details class="dropdown theme">
+  <summary class="dropdown__toggle" aria-label="<%= t("layout.theme.label") %>">
+    <span class="theme__icon theme__icon--dark"><%= t("layout.theme.icons.dark") %></span>
+    <span class="theme__icon theme__icon--light"><%= t("layout.theme.icons.light") %></span>
+    <span class="dropdown__caret" aria-hidden="true">▾</span>
+  </summary>
+  <ul class="dropdown__menu">
+    <% %w[light dark].each do |theme| %>
+      <li>
+        <button type="button" class="dropdown__option theme__option" data-theme-value="<%= theme %>">
+          <%= t("layout.theme.icons.#{theme}") %> <%= t("layout.theme.names.#{theme}") %>
+        </button>
+      </li>
+    <% end %>
+  </ul>
+</details>
