@@ -10,4 +10,6 @@ Rails.application.routes.draw do
   # get "service-worker" => "rails/pwa#service_worker", as: :pwa_service_worker
 
   root "pages#home"
+  get "/legal-notice", to: "pages#legal_notice", as: :legal_notice
+  get "/privacy-policy", to: "pages#privacy_policy", as: :privacy_policy
 end

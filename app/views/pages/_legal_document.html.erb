@@ -1,0 +1,27 @@
+<%# Shared layout for the legal pages. Their text lives in config/locales/*.yml under `scope`. %>
+<% content_for :title, "#{t("#{scope}.title")} · #{site.name}" %>
+
+<article class="legal">
+  <h1 class="legal__title"><%= t("#{scope}.title") %></h1>
+
+  <% t("#{scope}.sections").each.with_index(1) do |section, number| %>
+    <section class="legal__section">
+      <h2><%= number %>. <%= section[:title] %></h2>
+
+      <% Array(section[:paragraphs]).each do |paragraph| %>
+        <p><%= legal_text(paragraph) %></p>
+      <% end %>
+
+      <% if section[:details].present? %>
+        <dl class="legal__details">
+          <% section[:details].each do |detail| %>
+            <dt><%= detail[:label] %></dt>
+            <dd><%= legal_text(detail[:value]) %></dd>
+          <% end %>
+        </dl>
+      <% end %>
+    </section>
+  <% end %>
+
+  <p class="legal__updated"><%= t("#{scope}.updated") %></p>
+</article>

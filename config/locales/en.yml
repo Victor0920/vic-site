@@ -28,6 +28,9 @@ en:
         light: "Light"
         dark: "Dark"
     whatsapp_fab: "Message me on WhatsApp"
+    footer:
+      legal_notice: "Legal Notice"
+      privacy_policy: "Privacy Policy"
 
   pages:
     home:
@@ -111,3 +114,93 @@ en:
         lead: "Tell me about it on WhatsApp or by email and I'll get back to you as soon as possible."
         whatsapp: "WhatsApp"
         note_html: "Also on %{linkedin}."
+
+    legal_notice:
+      title: "Legal Notice"
+      updated: "Last updated: September 2026"
+      sections:
+        - title: "Identification details"
+          paragraphs:
+            - "In compliance with Article 10 of Spanish Law 34/2002, of 11 July, on Information Society Services and Electronic Commerce (LSSI-CE), the details of the owner of this website are as follows:"
+          details:
+            - label: "Owner"
+              value: "Víctor Vidal Sanchis (VIDAL SANCHIS VICTOR)"
+            - label: "Tax ID (NIF)"
+              value: "48765897D"
+            - label: "Address"
+              value: "Camino Hijuela del Pozo, 82-B, 03680, Aspe (Alicante), Spain"
+            - label: "Email"
+              value: "%{email}"
+            - label: "Activity"
+              value: "Software development and computer programming services as a self-employed professional"
+            - label: "Website"
+              value: "https://www.victorv.es"
+        - title: "Purpose"
+          paragraphs:
+            - "The purpose of this website is to provide information about the professional web and software development services offered by the owner and to make it easy for potential clients to get in touch."
+        - title: "Terms of use"
+          paragraphs:
+            - "Access to this website is free of charge and makes anyone who visits it a user, who accepts the terms of this legal notice. Users agree to make appropriate use of the content and not to use it for unlawful activities or activities contrary to good faith."
+        - title: "Intellectual and industrial property"
+          paragraphs:
+            - "The content of this website (texts, design, source code, logos and images) is the property of the owner or of third parties who have authorised its use. Its reproduction, distribution or transformation without express authorisation is prohibited, except for personal and private use. Projects shown in the portfolio may belong to their respective clients and are shown for demonstration purposes."
+        - title: "Liability"
+          paragraphs:
+            - "The owner is not liable for any damage that may result from service interruptions, errors in the content or computer viruses, despite having taken reasonable measures to prevent them. The information on this website may change without prior notice."
+        - title: "Third-party links"
+          paragraphs:
+            - "This website may contain links to third-party sites, such as LinkedIn or WhatsApp. The owner has no control over those sites and is not responsible for their content or their privacy policies."
+        - title: "Cookies"
+          paragraphs:
+            - "This website does not use analytics, advertising or tracking cookies, nor does it load third-party resources that could identify the user."
+        - title: "Data protection"
+          paragraphs:
+            - "Any personal data that users provide by email or WhatsApp will be processed in accordance with Regulation (EU) 2016/679 (GDPR) and Spanish Organic Law 3/2018 (LOPDGDD). Full information is available in the %{privacy_policy}."
+        - title: "Applicable law"
+          paragraphs:
+            - "This legal notice is governed by Spanish law. Any dispute shall be submitted to the courts and tribunals that have jurisdiction under the law."
+
+    privacy_policy:
+      title: "Privacy Policy"
+      updated: "Last updated: September 2026"
+      sections:
+        - title: "Data controller"
+          details:
+            - label: "Controller"
+              value: "Víctor Vidal Sanchis"
+            - label: "Tax ID (NIF)"
+              value: "48765897D"
+            - label: "Address"
+              value: "Camino Hijuela del Pozo, 82, puerta B, 03680 Aspe (Alicante), Spain"
+            - label: "Email"
+              value: "%{email}"
+        - title: "What data is processed"
+          paragraphs:
+            - "Only the data you provide voluntarily when you get in touch by email or WhatsApp is processed: your name, email address, phone number and the content of your message."
+            - "This website does not use analytics, advertising or tracking cookies, does not include measurement tools and does not load third-party resources, such as external fonts or scripts, that would send your data to other providers."
+        - title: "Purpose"
+          paragraphs:
+            - "Your data is used to reply to your enquiry and, if you hire my services, to manage the professional relationship and invoicing."
+        - title: "Legal basis"
+          details:
+            - label: "Enquiries"
+              value: "your consent when you get in touch (Art. 6.1.a GDPR) and taking steps at your request before entering into a contract (Art. 6.1.b GDPR)."
+            - label: "Clients"
+              value: "performance of the contract (Art. 6.1.b GDPR) and compliance with legal, tax and accounting obligations (Art. 6.1.c GDPR)."
+        - title: "Retention"
+          details:
+            - label: "Enquiries"
+              value: "data is kept for as long as needed to handle them and then deleted if they do not lead to a professional relationship."
+            - label: "Clients"
+              value: "data is kept for as long as the relationship lasts and, afterwards, for the periods required by tax and commercial law."
+        - title: "Recipients"
+          paragraphs:
+            - "Your data is not disclosed to third parties, except where required by law (for example, to the Spanish Tax Agency)."
+            - "To provide the service, I use providers that may have access to it as data processors: the website hosting provider, the email provider and WhatsApp (Meta Platforms Ireland Ltd.) if you choose that channel. Some of these providers may carry out international data transfers, covered by the safeguards provided for in the GDPR."
+        - title: "Your rights"
+          paragraphs:
+            - "You can exercise your rights of access, rectification, erasure, objection, restriction of processing and portability by writing to %{email}. You can also withdraw your consent at any time."
+            - "If you believe your data has not been processed correctly, you can file a complaint with the Spanish Data Protection Agency (%{aepd})."
+        - title: "Security"
+          paragraphs:
+            - "Appropriate technical and organisational measures are applied to protect your data against loss, misuse or unauthorised access."

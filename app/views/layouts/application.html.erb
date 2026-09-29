@@ -41,9 +41,9 @@
     <header class="top-nav">
       <%= link_to site.name, root_path, class: "top-nav__brand" %>
       <nav class="top-nav__links">
-        <a href="#about"><%= t("layout.nav.about") %></a>
-        <a href="#services"><%= t("layout.nav.services") %></a>
-        <a href="#experience"><%= t("layout.nav.experience") %></a>
+        <a href="/#about"><%= t("layout.nav.about") %></a>
+        <a href="/#services"><%= t("layout.nav.services") %></a>
+        <a href="/#experience"><%= t("layout.nav.experience") %></a>
         <%= render "layouts/locale_switcher" %>
         <%= render "layouts/theme_switcher" %>
         <%= link_to t("layout.nav.contact"), "#contact", class: "btn btn--small" %>
@@ -57,7 +57,8 @@
     <footer class="footer">
       <p>&copy;
         <%= Date.current.year %>
-        <%= site.name %>.
+        <%= site.name %>
+        ·
         <%= t("site.tagline") %>
         ·
         <%= t("site.location") %>.</p>
@@ -69,6 +70,10 @@
         <% end %>
         ·
         <%= mail_to contact_email %>
+        ·
+        <%= link_to t("layout.footer.legal_notice"), legal_notice_path, target: "_self" %>
+        ·
+        <%= link_to t("layout.footer.privacy_policy"), privacy_policy_path, target: "_self" %>
       </p>
     </footer>
 

@@ -1,7 +1,7 @@
 es:
   site:
     tagline: "Desarrollador full stack freelance"
-    location: "Aspe, Alicante"
+    location: "Aspe, Alicante (Spain)"
     meta_description: "%{name}, %{tagline} en %{location}. Aplicaciones web y páginas a medida, de principio a fin: frontend, backend, base de datos y hosting."
     whatsapp_message: "Hola Víctor, me gustaría hablar sobre un proyecto."
 
@@ -28,6 +28,9 @@ es:
         light: "Claro"
         dark: "Oscuro"
     whatsapp_fab: "Escríbeme por WhatsApp"
+    footer:
+      legal_notice: "Aviso Legal"
+      privacy_policy: "Política de Privacidad"
 
   pages:
     home:
@@ -111,3 +114,93 @@ es:
         lead: "Cuéntamelo por WhatsApp o por correo y te respondo lo antes posible."
         whatsapp: "WhatsApp"
         note_html: "También en %{linkedin}."
+
+    legal_notice:
+      title: "Aviso legal"
+      updated: "Última actualización: septiembre de 2026"
+      sections:
+        - title: "Datos identificativos"
+          paragraphs:
+            - "En cumplimiento del artículo 10 de la Ley 34/2002, de 11 de julio, de Servicios de la Sociedad de la Información y de Comercio Electrónico (LSSI-CE), se informa de los datos del titular de este sitio web:"
+          details:
+            - label: "Titular"
+              value: "Víctor Vidal Sanchis (VIDAL SANCHIS VICTOR)"
+            - label: "NIF"
+              value: "48765897D"
+            - label: "Domicilio"
+              value: "Camino Hijuela del Pozo, 82-B, 03680, Aspe (Alicante), España"
+            - label: "Email"
+              value: "%{email}"
+            - label: "Actividad"
+              value: "Desarrollo de software y servicios de programación informática como profesional autónomo"
+            - label: "Sitio web"
+              value: "https://www.victorv.es"
+        - title: "Objeto"
+          paragraphs:
+            - "Este sitio web tiene como finalidad informar sobre los servicios profesionales de desarrollo web y de software que ofrece el titular y facilitar el contacto con posibles clientes."
+        - title: "Condiciones de uso"
+          paragraphs:
+            - "El acceso a este sitio web es gratuito y atribuye la condición de usuario a quien lo visita, que acepta las condiciones de este aviso legal. El usuario se compromete a hacer un uso adecuado de los contenidos y a no emplearlos para actividades ilícitas o contrarias a la buena fe."
+        - title: "Propiedad intelectual e industrial"
+          paragraphs:
+            - "Los contenidos de este sitio web (textos, diseño, código fuente, logotipos e imágenes) son propiedad del titular o de terceros que han autorizado su uso. Queda prohibida su reproducción, distribución o transformación sin autorización expresa, salvo para uso personal y privado. Los proyectos mostrados en el portfolio pueden pertenecer a sus respectivos clientes y se muestran con fines demostrativos."
+        - title: "Responsabilidad"
+          paragraphs:
+            - "El titular no se hace responsable de los daños que pudieran derivarse de interrupciones del servicio, errores en los contenidos o virus informáticos, a pesar de haber adoptado las medidas razonables para evitarlos. La información de este sitio web puede modificarse sin previo aviso."
+        - title: "Enlaces a terceros"
+          paragraphs:
+            - "Este sitio web puede contener enlaces a sitios de terceros, como LinkedIn o WhatsApp. El titular no controla esos sitios y no se responsabiliza de sus contenidos ni de sus políticas de privacidad."
+        - title: "Cookies"
+          paragraphs:
+            - "Este sitio web no utiliza cookies de analítica, publicidad ni seguimiento, ni carga recursos de terceros que permitan identificar al usuario."
+        - title: "Protección de datos"
+          paragraphs:
+            - "Los datos personales que el usuario facilite por email o WhatsApp se tratarán conforme al Reglamento (UE) 2016/679 (RGPD) y a la Ley Orgánica 3/2018 (LOPDGDD). Puede consultar la información completa en la %{privacy_policy}."
+        - title: "Legislación aplicable"
+          paragraphs:
+            - "Este aviso legal se rige por la legislación española. Para cualquier controversia, las partes se someten a los juzgados y tribunales que correspondan conforme a la ley."
+
+    privacy_policy:
+      title: "Política de privacidad"
+      updated: "Última actualización: septiembre de 2026"
+      sections:
+        - title: "Responsable del tratamiento"
+          details:
+            - label: "Responsable"
+              value: "Víctor Vidal Sanchis"
+            - label: "NIF"
+              value: "48765897D"
+            - label: "Domicilio"
+              value: "Camino Hijuela del Pozo, 82, puerta B, 03680 Aspe (Alicante), España"
+            - label: "Email"
+              value: "%{email}"
+        - title: "Qué datos se tratan"
+          paragraphs:
+            - "Solo se tratan los datos que usted facilita voluntariamente al contactar por email o WhatsApp: nombre, dirección de email, número de teléfono y el contenido de su mensaje."
+            - "Este sitio web no utiliza cookies de analítica, publicidad ni seguimiento, no incluye herramientas de medición y no carga recursos de terceros, como fuentes o scripts externos, que transmitan sus datos a otros proveedores."
+        - title: "Finalidad"
+          paragraphs:
+            - "Sus datos se usan para responder a su consulta y, si llega a contratar mis servicios, para gestionar la relación profesional y la facturación."
+        - title: "Base legal"
+          details:
+            - label: "Consultas"
+              value: "su consentimiento al contactar (art. 6.1.a RGPD) y la aplicación de medidas precontractuales a petición suya (art. 6.1.b RGPD)."
+            - label: "Clientes"
+              value: "la ejecución del contrato (art. 6.1.b RGPD) y el cumplimiento de obligaciones legales, fiscales y contables (art. 6.1.c RGPD)."
+        - title: "Conservación"
+          details:
+            - label: "Consultas"
+              value: "los datos se conservan el tiempo necesario para atenderlas y después se eliminan si no dan lugar a una relación profesional."
+            - label: "Clientes"
+              value: "los datos se conservan mientras dure la relación y, después, durante los plazos que exige la normativa fiscal y mercantil."
+        - title: "Destinatarios"
+          paragraphs:
+            - "Sus datos no se ceden a terceros, salvo por obligación legal (por ejemplo, a la Agencia Tributaria)."
+            - "Para prestar el servicio se utilizan proveedores que pueden tener acceso a ellos como encargados del tratamiento: el hosting de la web, el proveedor de correo electrónico y WhatsApp (Meta Platforms Ireland Ltd.) si usted elige ese canal. Algunos de estos proveedores pueden realizar transferencias internacionales de datos, amparadas en las garantías previstas en el RGPD."
+        - title: "Sus derechos"
+          paragraphs:
+            - "Puede ejercer sus derechos de acceso, rectificación, supresión, oposición, limitación del tratamiento y portabilidad escribiendo a %{email}. También puede retirar su consentimiento en cualquier momento."
+            - "Si considera que sus datos no se han tratado correctamente, puede presentar una reclamación ante la Agencia Española de Protección de Datos (%{aepd})."
+        - title: "Seguridad"
+          paragraphs:
+            - "Se aplican medidas técnicas y organizativas adecuadas para proteger sus datos frente a pérdida, uso indebido o acceso no autorizado."
